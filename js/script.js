@@ -59,3 +59,16 @@ function generateStrongerKey(len, characters){
 }
 
 //homework 13
+/*
+    Реалізувати рекурсивну функцію, яка зводить число в ступінь.
+    Число, яке потрібно звести в ступінь, передається як перший аргумент у функцію
+    Ступінь передається як другий аргумент у функцію
+    pow(num, degree)
+*/
+
+let twoInFifthDegree = pow(2, 5);
+console.log(`Homework 13: ${twoInFifthDegree}`)
+function pow(num, degree){
+    if (degree === 0) return 1;
+    return num * pow(num, --degree);
+}
